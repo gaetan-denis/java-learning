@@ -10,6 +10,5 @@ public class Main {
         } else {
             System.out.println("Mon entier est null");
         }
-
     }
 }
