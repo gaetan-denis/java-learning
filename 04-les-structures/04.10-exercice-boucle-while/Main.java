@@ -7,10 +7,12 @@ public class Main {
         int userNumber = 0;
         int number1 = 0;
         int number2 = 0;
+        int count =0;
         Scanner scan = new Scanner(System.in);
         do {
             System.out.print("Saisissez votre nombre mystère :");
             userNumber = Integer.parseInt(scan.nextLine());
+            count ++;
 
             if (userNumber > randomNumber) {
                 number1 = userNumber;
@@ -32,7 +34,7 @@ public class Main {
             
 
         } while (userNumber != randomNumber);
-        System.out.println("Vous avez gagné!");
+        System.out.println("Vous avez gagné en effectuant " + count + " tentatives");
         
         scan.close();
     }
