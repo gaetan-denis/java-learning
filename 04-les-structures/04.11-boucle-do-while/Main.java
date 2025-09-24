@@ -11,15 +11,18 @@ public class Main {
         int max =99;
 
         do {
-            computerNumber = (int) (Math.random()  * (max-min+1) +min);
+            // computerNumber = (int) (Math.random()  * (max-min+1) +min);
+
+            // Recherche par dichotomie
+            computerNumber = (max-min +1 ) / 2 + min;
             if (computerNumber > userNumber) {
                 System.out.println(computerNumber + ": C'est trop grand!");
                 count ++;
-                max = computerNumber;
+                max = computerNumber -1;
             } else {
                 System.out.println(computerNumber + ": C'est trop petit");
                 count ++;
-                min = computerNumber;
+                min = computerNumber +1;
             }
         } while (computerNumber != userNumber);
 
