@@ -35,6 +35,5 @@ public class Main {
             System.out.println("\nFibonacci au rang " + userRang + "=" + " " + fiboN);
             scan.close();
         }
-
     }
 }
