@@ -3,7 +3,7 @@ public class Terrain{
     
     // Un terrain, qu'est-ce que c'est? --> Attributs
 
-    public int largeur;
+    private int largeur;
     private int longueur;
 
     // Un terrain ça se construit comment? --> Constructeurs
@@ -17,9 +17,34 @@ public class Terrain{
 
     // Un terrain, qu'est-ce que ça sait faire? --> Méthodes
 
+    // Getter ou accesseur
+
+   
+
     public int superficie(){
         int laSuperficieDuTerrain = largeur * longueur;
         return laSuperficieDuTerrain;
+    }
+
+    public int getLargeur() {
+        return largeur;
+    }
+
+    public void setLargeur(int paramLargeur) {
+        if(paramLargeur <0){
+            // lancer une exception 
+        }else{
+            this.largeur = paramLargeur;
+        }
+        
+    }
+
+    public int getLongueur() {
+        return longueur;
+    }
+
+    public void setLongueur(int paramLongueur) {
+        this.longueur = paramLongueur;
     }
 
     public void afficher(){
