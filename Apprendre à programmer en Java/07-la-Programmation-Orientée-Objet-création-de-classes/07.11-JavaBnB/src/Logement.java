@@ -5,12 +5,12 @@ public class Logement {
     private int superficie; 
     private int nbVoyageursMax;
 
-    public Logement(String paramNom, int paramTarifParNuit, String paramAdresse, int paramSuperficie, int paramNbVoyageursMax){
-        this.nom= paramNom;
-        this.tarifParNuit = paramTarifParNuit;
-        this.adresse = paramAdresse;
-        this.superficie = paramSuperficie;
-        this.nbVoyageursMax = paramNbVoyageursMax;
+    public Logement(String Nom, int TarifParNuit, String Adresse, int Superficie, int NbVoyageursMax){
+        this.nom= Nom;
+        this.tarifParNuit = TarifParNuit;
+        this.adresse = Adresse;
+        this.superficie = Superficie;
+        this.nbVoyageursMax = NbVoyageursMax;
     }
 
     // Getter & Setters
@@ -49,7 +49,7 @@ public class Logement {
     }
 
     public void afficher(){
-        System.out.println("Le logement (" + nom + ") est situé " + adresse);
-        System.out.println("Superficie : " + superficie + "m²");
+        System.out.println("Le logement (" + this.nom + ") est situé " + this.adresse);
+        System.out.println("Superficie : " + this.superficie + "m²");
     }
 }
